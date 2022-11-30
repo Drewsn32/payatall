@@ -1,0 +1,24 @@
+﻿@model DomainBusPayAtAllCreateRequest
+
+
+<form method="post" action="https://gateway2.payatall.com/paynow">
+    <input type="text" name="mid" value="@Model.MID" />
+    <input type="text" name="serviceid" value="@Model.ServiceId" />
+    <input type="text" name="inv" value="@Model.InviceNo" />
+    <input type="text" name="desp" value="@Model.Description" />
+    <input type="text" name="customer_name" value="@Model.CustomerName" >
+    <input type="text" name="customer_email" value="@Model.CustomerEmail" />
+    <input type="text" name="customer_phone" value="@Model.CustomerPhone" />
+    <input type="text" name="amt" value="@Model.Amount" />
+    <input type="text" name="curr_type" value="@Model.CurrencyType" />
+    <input type="text" name="resp_url_back" value="@Model.ResponseUrlBack" />
+    <input type="text" name="resp_url_cancel" value="@Model.ResponseUrlCancel" />
+    <input type="text" name="resp_url_confirm" value="@Model.ResponseUrlConfirm" />
+    <input type="text" name="language" value="TH" />
+    <input type="text" name="expired_date" value="@Model.ExpiredDate" /> 
+    <input type="text" name="message_slip1" value="" />
+    <input type="text" name=" message_slip2" value="" />
+    <input type="text" name=" channel" value="@Model.Channel" />
+    <input type="text" name=" checkdata" value="@Model.CheckData" />
+    <input type="submit" name="submit" value=”submit” />
+</form>
